@@ -10,10 +10,23 @@
     */
 
     // ENTRADA
-
+const idade = parseInt(prompt("Informe a idade do seu cão em anos:"));
+const porte = prompt("Informe o porte do seu cão (pequeno-P, médio-M ou grande-G):").toUpperCase();
     
     // PROCESSAMENTO
-
+switch (porte) {
+    case 'P':
+        alert(`A idade do seu cão em anos humanos é de ${idade * 5} anos`);
+        break;
+    case 'M':
+        alert(`A idade do seu cão em anos humanos é de ${idade * 6} anos`);
+        break;
+    case 'G':
+        alert(`A idade do seu cão em anos humanos é de ${idade * 7} anos`);
+        break;  
+    default:
+        alert("Informe os dados pedidos corretamente.");
+}
     
     // SAÍDA
 
