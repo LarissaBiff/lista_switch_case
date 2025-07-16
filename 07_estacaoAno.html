@@ -8,17 +8,17 @@
 
     //ENTRADA
 const hemisferio = prompt("Informe o em que se encontra hemisfério (Norte-N ou Sul-S):").toUpperCase();
-const mes = prompt("Informe o mês atual:    (janeiro-JAN, fevereiro-FEV, março-MAR, abril-ABR, maio-MAI, junho-JUN, julho-JUL, agosto-AGO, setembro-SET, outubro-OUT, novembro-NOV, desembro-DES)").toUpperCase();
+const mes = prompt("Informe o mês atual:    (janeiro-JAN, fevereiro-FEV, março-MAR, abril-ABR, maio-MAI, junho-JUN, julho-JUL, agosto-AGO, setembro-SET, outubro-OUT, novembro-NOV, dezembro-DEZ)").toUpperCase();
     //PROCESSAMENTO
 
 /*  Norte: JUL, AGO e SET - verão
-           OUT, NOV e DES - outono
+           OUT, NOV e DEZ - outono
            JAN, FEV e MAR - inverno
            ABR, MAI e JUN - primavera
     Sul:   JAN, FEV e MAR - verão
            ABR, MAI e JUN - outono
            JUL, AGO e SET - inverno
-           OUT, NOV e DES - primavera
+           OUT, NOV e DEZ - primavera
 */
 
 switch (hemisferio) {
@@ -31,7 +31,7 @@ switch (hemisferio) {
                 break;
             case "OUT":
             case "NOV":
-            case "DES":
+            case "DEZ":
                 alert("Outono")
                 break;
             case "JAN":
@@ -55,7 +55,7 @@ switch (hemisferio) {
                 break;
             case "OUT":
             case "NOV":
-            case "DES":
+            case "DEZ":
                 alert("Primavera")
                 break;
             case "JAN":
